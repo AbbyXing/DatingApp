@@ -62,3 +62,4 @@
 /Users/xinghaoru/Documents/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/xinghaoru/Documents/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
 /Users/xinghaoru/Documents/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/xinghaoru/Documents/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Data/UserSeedData.json

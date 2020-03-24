@@ -16,7 +16,7 @@ export class MemberDetailResolver implements Resolve<User> {
                 private alertify: AlertifyService) {}
 
     resolve(route: ActivatedRouteSnapshot): Observable<User> {
-        return this.userService.getUser(route.params.id).pipe(
+        return this.userService.getUser(route.params['id']).pipe(
             catchError(error => {
                 this.alertify.error('Problem retrieving data...');
                 // tslint:disable-next-line: no-unused-expression

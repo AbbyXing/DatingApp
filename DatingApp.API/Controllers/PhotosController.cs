@@ -84,6 +84,7 @@ namespace DatingApp.API.Controllers
 
             var photo = this._mapper.Map<Photo>(photoForCreationDto);
 
+            // if this is the first photo of this user, set it as main photo
             if (!userFromRepo.Photos.Any(u => u.IsMain))
             {
                 photo.IsMain = true;

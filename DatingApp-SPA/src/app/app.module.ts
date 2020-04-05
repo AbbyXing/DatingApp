@@ -32,6 +32,7 @@ import { AlertifyService } from './_services/alertify.service';
 import { AuthGuard } from './_guards/auth.guard';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { TimeagoModule } from 'ngx-timeago';
 
 
 
@@ -52,7 +53,7 @@ export function tokenGetter() {
       MemberEditComponent,
       PhotoEditorComponent,
       ListsComponent,
-      MessagesComponent,
+      MessagesComponent
    ],
    imports: [
       BrowserModule,
@@ -66,6 +67,7 @@ export function tokenGetter() {
       RouterModule.forRoot(appRoutes),
       NgxGalleryModule,
       FileUploadModule,
+      TimeagoModule.forRoot(),
       JwtModule.forRoot({
          config: {
             tokenGetter,

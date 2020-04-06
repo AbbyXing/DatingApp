@@ -22,7 +22,7 @@ export class MemberDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.data.subscribe(data => {
-      this.user = data['user']; // in routes.ts -> path-> resolve -> 'user'
+      this.user = data['user']; // routes.ts -> path-> resolve authService -> 'user'
     });
 
     // photo gallery

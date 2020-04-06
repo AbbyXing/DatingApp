@@ -6,6 +6,6 @@ export interface Pagination {
 }
 
 export class PaginatedResult<T> {
-    result: T;
-    pagination: Pagination;
+    result: T; // users objects
+    pagination: Pagination; // pagination params
 }

@@ -35,6 +35,7 @@ import { AuthGuard } from './_guards/auth.guard';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { TimeagoModule } from 'ngx-timeago';
+import { ListsResolver } from './_resolvers/lists.resolver';
 
 
 
@@ -89,7 +90,8 @@ export function tokenGetter() {
       ErrorInterceptorProvider,
       MemberDetailResolver,
       MemberListResolver,
-      MemberEditResolver
+      MemberEditResolver,
+      ListsResolver
    ],
    bootstrap: [
       AppComponent
